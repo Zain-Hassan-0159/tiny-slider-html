@@ -1,0 +1,113 @@
+.boldism_custom_slider * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.boldism_custom_slider .draggable-wrapper {
+  position: relative;
+  width: 100%; /* Reduce width for a better display */
+  margin: 0 auto; /* Center the slider */
+  height: 1rem;
+  background-color: #FF00B1;
+}
+.boldism_custom_slider #draggable-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  cursor: pointer;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease; /* Smooth snap effect */
+}
+.boldism_custom_slider .draggable img {
+  width: 115px;
+}
+@media (max-width: 1024px) {
+  .boldism_custom_slider .draggable img {
+    width: 72px;
+  }
+}
+.boldism_custom_slider .draggable-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background-color: #FF00B1;
+}
+.boldism_custom_slider .slider-labels {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: -3.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .boldism_custom_slider .slider-labels {
+    font-size: 0.9rem;
+    bottom: -2rem;
+  }
+}
+.boldism_custom_slider .slide-heading {
+  color: var(--e-global-color-primary);
+  font-family: "piepie", Sans-serif;
+  font-size: 4.5vw;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  max-width: 1100px;
+}
+@media (max-width: 767px) {
+  .boldism_custom_slider .slide-heading {
+    color: white;
+    font-size: 1.8rem;
+    line-height: 0.95em;
+  }
+}
+.boldism_custom_slider .link-button {
+  font-family: "piepie", Sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 0.85em;
+  border-style: none;
+  border-radius: 0px 0px 0px 0px;
+  padding: 1em 2em 1.1em 2em;
+  background-color: var(--e-global-color-primary);
+  fill: var(--e-global-color-26c53f8);
+  color: var(--e-global-color-26c53f8);
+  display: inline-block;
+  margin: 30px 0 70px;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  .boldism_custom_slider .link-button {
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .boldism_custom_slider .link-button {
+    font-size: 1.1rem;
+  }
+}
+.boldism_custom_slider .boldism_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
